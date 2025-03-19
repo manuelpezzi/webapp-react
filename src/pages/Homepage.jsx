@@ -29,9 +29,9 @@ export default function HomePage() {
 
     return (
         <>
-            <h1 className="text-primary">Boolmovies</h1>
-            <h2>Tutti i nostri film</h2>
-            <div className="row row-cols-3">
+            <h1 className="text-danger text-center">Boolmovies</h1>
+            <h2 className='text-danger'>Tutti i nostri film</h2>
+            <div className="row row-cols-3 ">
 
                 {renderMovies()}
 

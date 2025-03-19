@@ -5,9 +5,9 @@ export default function MovieCard({ movie }) {
 
     return (
         <>
-            <div className="card mb-4">
+            <div className="card mb-4 text-danger">
                 <img src={image} alt={title} />
-                <div className="card-body">
+                <div className="card-body bg-dark">
                     <h5 className="card-title text-center">{title}</h5>
                     <span>
                         <b>direct By: </b>
@@ -25,7 +25,7 @@ export default function MovieCard({ movie }) {
                         <b>Relase Date:</b>
                         {release_year}
                     </p>
-                    <Link to={`movies/${id}`}>Read More</Link>
+                    <Link to={`movies/${id}`} className='text-danger'>Read More</Link>
                 </div>
             </div>
         </>

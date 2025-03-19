@@ -23,12 +23,12 @@ export default function MoviePage() {
     };
     return (
         <>
-            <h1>{movie?.title}</h1>
+            <h1 className='text-danger'>{movie?.title}</h1>
             <img src={movie?.image} alt={movie?.title} />
             {/* qui andrà la pagina di dettaglio del prodotto */}
 
             <section>
-                <h4>Our community reviews</h4>
+                <h4 className='text-danger'>Our community reviews</h4>
                 {renderReviews()}
             </section>
             <section>

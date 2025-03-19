@@ -40,9 +40,9 @@ export default function ReviewForm({ movie_id, reloadReviews }) {
 
     return (
         <>
-            <div className="card">
-                <h5>Add reviews</h5>
-                <div className="card-body">
+            <div className="card bg-dark ">
+                <h5 className='text-danger'>Add reviews</h5>
+                <div className="card-body  text-danger">
                     <form onSubmit={handleSubmit}>
                         <div className="form-group">
                             <label>Name</label>
@@ -76,7 +76,7 @@ export default function ReviewForm({ movie_id, reloadReviews }) {
                             />
                         </div>
                         <div>
-                            <button type="submit" className="btn btn-primary">
+                            <button type="submit" className="btn btn-danger">
                                 Crea Recensione
                             </button>
                         </div>
